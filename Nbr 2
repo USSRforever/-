@@ -1,0 +1,18 @@
+#include "iostream"
+#include <cstdlib>
+
+using namespace std;
+int main()
+{
+	double s = 0, k = 0, a;
+	do {
+		cin >> a;
+		s = s + a;
+		k = k + 1;
+	} while (a != 0);
+	double d;
+	d = s / k;
+	cout << d;
+	system("pause");
+	return 0;
+}
