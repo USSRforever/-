@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+	int N, G;
+	
+	cout << "Input a Length of array: ";
+	cin >> N;
+	cout << "Input a Length of subarray(s): ";
+	cin >> G;
+	int** A = new int* [N];
+
+	for (int i = 0; i < N; ++i)
+	{
+		A[i] = new int[G];
+		for (int k = 0; k < G; ++k)
+		{
+			cout << "Input a number: " << endl;
+			cin >> A[i][k];
+			if (A[i][k] == 3 * (i + k))
+				cout << "This number: " << A[i][k] << "." << endl;
+		}
+	}
+	system("pause");
+	return 0;
+}
